@@ -1,0 +1,189 @@
+#header {
+    background: white;
+    width: 100%;
+    height: 115px;
+    width: 1270px;
+}
+
+#content {
+    background: white;
+    width: 100%;
+    height: 750px;
+    width: 1270px;
+}
+
+#footer {
+    background: black;
+    width: 100%;
+    height: 200px;
+    width: 1270px;
+}
+
+.picture {
+    width: 100px;
+}
+
+.picture2 {
+    display:block;
+    margin:auto;
+}
+
+#navbar {
+    margin: 0;
+    list-style-type: none;
+    border: 2px solid white;
+    border-radius: 20px 5px;
+    height: 30px;
+    width: 700px;
+    text-align: center;
+    background-color: white;
+    margin-left: 220px;
+    margin-top: -75px;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+#navbar a:hover {
+    border-radius: 20px 5px;
+    background-color: red;
+}
+
+.text {
+    color: black;
+    margin-left: 100px;
+    margin-top: -75px;
+}
+
+.text2 {
+    font-size: 50px;
+}
+
+#navbar2 {
+    margin: 0;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 20px 5px;
+    height: 30px;
+    width: 700px;
+    text-align: center;
+    background-color: black;
+    margin-left: 220px;
+    margin-top: -75px;
+}
+
+#navbar2 li {
+    display: inline;
+}
+
+#navbar2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+#navbar2 a:hover {
+    border-radius: 20px 5px;
+    background-color: red;
+}
+
+.text5 {
+    color: white;
+    margin-left: 100px;
+    margin-top: -75px;
+}
+
+.text4 {
+    color: white;
+}
+
+.text6{
+    color: black;
+}
+
+body {
+    cursor: url(../IMG/HP.svg), url(../IMG/HP.svg), default;
+}
+
+a:hover {
+    cursor: url(../IMG/HP2.svg), url(../IMG/HP2.svg), default;
+}
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+}
+
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}

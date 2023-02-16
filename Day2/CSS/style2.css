@@ -1,0 +1,438 @@
+#header {
+    background: white;
+    width: 100%;
+    height: 115px;
+    width: 1270px;
+}
+
+#content {
+    background: white;
+    width: 100%;
+    height: 2520px;
+    width: 1270px;
+}
+
+#footer {
+    background: black;
+    width: 100%;
+    height: 200px;
+    width: 1270px;
+}
+
+.picture {
+    width: 100px;
+}
+
+#navbar {
+    margin: 0;
+    list-style-type: none;
+    border: 2px solid white;
+    border-radius: 20px 5px;
+    height: 30px;
+    width: 700px;
+    text-align: center;
+    background-color: white;
+    margin-left: 220px;
+    margin-top: -75px;
+}
+
+#navbar li {
+    display: inline;
+}
+
+.picture{
+width: 100px;
+}
+
+.picture2{
+    width: 350px;
+    margin-top: -580px;
+    }
+
+    .picture3{
+        display:block;
+        margin:auto;
+        width: 400px;
+        }
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+.picture4{
+    width: 500px;
+    }
+
+#navbar a:hover {
+    border-radius: 20px 5px;
+    background-color: red;
+}
+
+#navbar2 {
+    margin: 0;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 20px 5px;
+    height: 30px;
+    width: 700px;
+    text-align: center;
+    background-color: black;
+    margin-left: 220px;
+    margin-top: -75px;
+}
+
+#navbar2 li {
+    display: inline;
+}
+
+#navbar2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+#navbar2 a:hover {
+    border-radius: 20px 5px;
+    background-color: red;
+}
+
+body {
+    cursor: url(../IMG/HP.svg), url(../IMG/HP.svg), default;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    cursor: url(../IMG/HP2.svg), url(../IMG/HP2.svg), default;
+}
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+}
+
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+.text {
+    color: black;
+    margin-left: 100px;
+    margin-top: -75px;
+}
+
+.text2 {
+    font-size: 50px;
+}
+
+.text3{
+margin-top: 540px;
+margin-left: 10px;
+color: yellow;
+}
+
+.text4{
+    margin-left: 800px;
+    color: yellow;
+    margin-top: -50px;
+    }
+
+    .text5{
+        color: white;
+        font-size: 25px;
+    }
+
+    .text6 {
+        color: white;
+        margin-left: 100px;
+        margin-top: -75px;
+    }
+
+.container_slider_css {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative
+}
+
+.photo_slider_css {
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    width: 100%
+}
+
+.container_slider_css2 {
+    margin-left: 770px;
+    margin-top: -295px;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative
+}
+
+.photo_slider_css2 {
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    width: 100%
+}
+
+@keyframes round {
+    25% {
+        opacity: 1
+    }
+    40% {
+        opacity: 0
+    }
+}
+
+img:nth-child(1) {
+    animation-delay: 12s
+}
+
+img:nth-child(2) {
+    animation-delay: 8s
+}
+
+img:nth-child(3) {
+    animation-delay: 4s
+}
+
+img:nth-child(4) {
+    animation-delay: 0
+}
+
+@media(min-width:0px) and (max-width:320px) {
+    .container_slider_css {
+        width: 80%;
+        height: 190px
+    }
+}
+
+@media(min-width:321px) and (max-width:480px) {
+    .container_slider_css {
+        width: 80%;
+        height: 190px
+    }
+}
+
+.input {
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    margin-left: 530px;
+    margin-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    /* анимация перехода */
+    pointer-events: none;
+    /* элемент невидим для событий мыши */
+}
+
+
+/* при отображении модального окно */
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+
+/* ширина модального окна и его отступы от экрана */
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+}
+
+
+/* свойства для блока, содержащего контент модального окна */
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
+
+
+/* свойства для заголовка модального окна */
+
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+/* свойства для кнопки "Закрыть" */
+
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+
+.close:focus,
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+
+/* свойства для блока, содержащего основное содержимое окна */
+
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
